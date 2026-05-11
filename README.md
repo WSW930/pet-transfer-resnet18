@@ -70,6 +70,7 @@ pet-transfer-resnet18/
 │  └─ assets/
 ├─ outputs/
 └─ data/
+```
 
 ## How to Run
 
@@ -78,16 +79,24 @@ pet-transfer-resnet18/
 ```bash
 git clone https://github.com/WSW930/pet-transfer-resnet18.git
 cd pet-transfer-resnet18
-
+```
 
 2. Install dependencies.
 
+```bash
 pip install -r requirements.txt
-
+```
 
 3. Open the Notebook
 
+```bash
 jupyter notebook notebooks/01_pet_transfer_resnet18_baseline.ipynb
-
 Or run it in Google Colab.
+```
 
+## Next Experiments
+- Fine-tune the entire ResNet18 model instead of freezing the backbone
+- Add early stopping
+- Try stronger data augmentation
+- Compare ResNet18 with other pretrained models
+- Analyze confusion patterns between similar pet breeds
