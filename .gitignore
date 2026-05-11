@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data
+data/*
+!data/.gitkeep
+
+# Outputs / checkpoints
+outputs/*
+!outputs/.gitkeep
+*.pth
+*.pt
+*.ckpt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
