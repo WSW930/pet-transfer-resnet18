@@ -91,3 +91,9 @@ jupyter notebook notebooks/01_pet_transfer_resnet18_baseline.ipynb
 
 Or run it in Google Colab.
 
+## Next Experiments
+- Fine-tune the entire ResNet18 model instead of freezing the backbone
+- Add early stopping
+- Try stronger data augmentation
+- Compare ResNet18 with other pretrained models
+- Analyze confusion patterns between similar pet breeds
