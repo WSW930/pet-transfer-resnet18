@@ -79,17 +79,18 @@ pet-transfer-resnet18/
 ```bash
 git clone https://github.com/WSW930/pet-transfer-resnet18.git
 cd pet-transfer-resnet18
-
+```
 
 2. Install dependencies.
 
+```bash
 pip install -r requirements.txt
-
+```
 
 3. Open the Notebook
 
+```bash
 jupyter notebook notebooks/01_pet_transfer_resnet18_baseline.ipynb
-
 Or run it in Google Colab.
 ```
 
