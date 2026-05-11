@@ -70,6 +70,7 @@ pet-transfer-resnet18/
 │  └─ assets/
 ├─ outputs/
 └─ data/
+```
 
 ## How to Run
 
@@ -90,6 +91,7 @@ pip install -r requirements.txt
 jupyter notebook notebooks/01_pet_transfer_resnet18_baseline.ipynb
 
 Or run it in Google Colab.
+```
 
 ## Next Experiments
 - Fine-tune the entire ResNet18 model instead of freezing the backbone
