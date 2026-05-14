@@ -39,6 +39,12 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 - Training strategy: Fine-Tuning(with reducing Learning Rate)
 - Final layer replaced for pet breed classification
 
+[3. EarlyStopping_version]
+- Backbone: ResNet18
+- Pretrained weights: ImageNet
+- Training strategy: Transfer learning adding EarlyStopping (Increasing EPOCH to 30)
+- Final layer replaced for pet breed classification
+
 ## Experiment Summary
 
 | Item | Description |
@@ -63,6 +69,12 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 | Best Validation Accuracy | 90.76% |
 | Test Accuracy | 85.69% |
 
+[3. EarlyStopping_version]
+| Metric | Score |
+|---|---:|
+| Best Validation Accuracy | 90.49% |
+| Test Accuracy | 87.84% |
+
 ## What I Learned
 
 - How to use a pretrained CNN model for transfer learning
@@ -72,7 +84,7 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 - How to evaluate wrong predictions
 - How to perform single-image inference
 
-## Repository Structure(2026.05.12.ver.)
+## Repository Structure(2026.05.14.ver.)
 
 ```text
 pet-transfer-resnet18/
@@ -83,7 +95,9 @@ pet-transfer-resnet18/
 │  ┣ 00_pet_transfer_project_baseline_before_execution.ipynb
 │  ┣ 01_pet_transfer_resnet18_baseline.ipynb
 │  ┣ 02_pet_transfer_project_without_Freeze_version_before_execution.ipynb
-│  └─03_pet_transfer_project_without_Freeze_version.ipynb
+│  ┣ 03_pet_transfer_project_without_Freeze_version.ipynb
+│  ┣ 04_pet_transfer_project_EarlyStopping_before_execution.ipynb
+│  └─05_pet_transfer_project_EarlyStopping.ipynb
 ├─ docs/
 │  └─ assets/
 ├─ outputs/
@@ -114,7 +128,7 @@ Or run it in Google Colab.
 
 ## Next Experiments
 - Fine-tune the entire ResNet18 model instead of freezing the backbone(First Try - 2026.05.12.)
-- Add early stopping
+- Add early stopping(Frist Try - 2026.05.14.)
 - Try stronger data augmentation
 - Compare ResNet18 with other pretrained models
 - Analyze confusion patterns between similar pet breeds
