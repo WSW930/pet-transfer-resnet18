@@ -26,9 +26,17 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 
 ## Model
 
+[1. baseline]
 - Backbone: ResNet18
 - Pretrained weights: ImageNet
 - Training strategy: Transfer learning
+- Final layer replaced for pet breed classification
+
+
+[2. without_FREEZE_version]
+- Backbone: ResNet18
+- Pretrained weights: ImageNet
+- Training strategy: Fine-Tuning(with reducing Learning Rate)
 - Final layer replaced for pet breed classification
 
 ## Experiment Summary
