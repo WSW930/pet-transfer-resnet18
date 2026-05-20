@@ -24,26 +24,15 @@ The goal of this project is to understand the full workflow of an image classifi
 
 The dataset is automatically downloaded by torchvision when the notebook is executed.
 
-## Model
+## Experiments
 
-[1. baseline]
-- Backbone: ResNet18
-- Pretrained weights: ImageNet
-- Training strategy: Transfer learning
-- Final layer replaced for pet breed classification
+| ID | Notebook | Strategy | Description |
+|---:|---|---|---|
+| 00 | 00_pet_transfer_project_baseline_before_execution.ipynb | Clean baseline | Notebook without execution outputs |
+| 01 | 01_pet_transfer_resnet18_baseline.ipynb | Baseline | Frozen backbone transfer learning |
+| 02 | 03_pet_transfer_project_without_Freeze_version.ipynb | Fine-tuning | Unfrozen backbone with reduced LR |
+| 03 | 05_pet_transfer_project_EarlyStopping.ipynb | Early Stopping | Transfer learning with early stopping |
 
-
-[2. without_FREEZE_version]
-- Backbone: ResNet18
-- Pretrained weights: ImageNet
-- Training strategy: Fine-Tuning(with reducing Learning Rate)
-- Final layer replaced for pet breed classification
-
-[3. EarlyStopping_version]
-- Backbone: ResNet18
-- Pretrained weights: ImageNet
-- Training strategy: Transfer learning adding EarlyStopping (Increasing EPOCH to 30)
-- Final layer replaced for pet breed classification
 
 ## Experiment Summary
 
@@ -75,6 +64,10 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 | Best Validation Accuracy | 90.49% |
 | Test Accuracy | 87.84% |
 
+## Accuracy Comparison(2026.05.14.ver.)
+
+![Experiment Accuracy Comparison(2026.05.14.ver.)](docs/assets/experiment_accuracy_comparison_05.14.png)
+
 ## What I Learned
 
 - How to use a pretrained CNN model for transfer learning
@@ -99,7 +92,7 @@ pet-transfer-resnet18/
 │  ┣ 04_pet_transfer_project_EarlyStopping_before_execution.ipynb
 │  └─05_pet_transfer_project_EarlyStopping.ipynb
 ├─ docs/
-│  └─ assets/
+│  └─ assets/experiment_accuracy_comparison_05.14.png
 ├─ outputs/
 └─ data/
 ```
