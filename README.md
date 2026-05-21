@@ -31,6 +31,7 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 | 00 | 00_pet_transfer_project_baseline_before_execution.ipynb | Clean baseline | Notebook without execution outputs |
 | 01 | 01_pet_transfer_resnet18_baseline.ipynb | Baseline | Frozen backbone transfer learning |
 | 02 | 03_pet_transfer_project_without_Freeze_version.ipynb | Fine-tuning | Unfrozen backbone with reduced LR |
+| 02.2 | 07_pet_transfer_project_without_Freeze_LR_same_version.ipynb | Fine-tuning | Unfrozen backbone with same LR |
 | 03 | 05_pet_transfer_project_EarlyStopping.ipynb | Early Stopping | Transfer learning with early stopping |
 
 
@@ -58,6 +59,12 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 | Best Validation Accuracy | 90.76% |
 | Test Accuracy | 85.69% |
 
+[2-2. without_FREEZE_version_with_same_LR]
+| Metric | Score |
+|---|---:|
+| Best Validation Accuracy | 64.81% |
+| Test Accuracy | 60.00% |
+
 [3. EarlyStopping_version]
 | Metric | Score |
 |---|---:|
@@ -77,7 +84,7 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 - How to evaluate wrong predictions
 - How to perform single-image inference
 
-## Repository Structure(2026.05.14.ver.)
+## Repository Structure(2026.05.21.ver.)
 
 ```text
 pet-transfer-resnet18/
@@ -90,9 +97,16 @@ pet-transfer-resnet18/
 │  ┣ 02_pet_transfer_project_without_Freeze_version_before_execution.ipynb
 │  ┣ 03_pet_transfer_project_without_Freeze_version.ipynb
 │  ┣ 04_pet_transfer_project_EarlyStopping_before_execution.ipynb
-│  └─05_pet_transfer_project_EarlyStopping.ipynb
+│  ┣ 05_pet_transfer_project_EarlyStopping.ipynb
+│  ┣ _06_pet_transfer_project_without_Freeze_LR_same_version_before_execution.ipynb
+│  └─07_pet_transfer_project_without_Freeze_LR_same_version.ipynb
 ├─ docs/
-│  └─ assets/experiment_accuracy_comparison_05.14.png
+│  └─ assets/
+│       ┣ experiment_accuracy_comparison_05.14.png
+│       ┣ pet_transfer_project_baseline_Loss_Accuracy_Curve.png
+│       ┣ pet_transfer_project_without_Freeze_version_Loss_Accuracy_Curve.png
+│       ┣ pet_transfer_project_without_Freeze_LR_same_version_Loss_Accuracy_Curve.png
+│       └─ pet_transfer_project_EarlyStopping_Loss_Accuracy_Curve.png
 ├─ outputs/
 └─ data/
 ```
