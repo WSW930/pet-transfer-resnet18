@@ -84,7 +84,7 @@ The dataset is automatically downloaded by torchvision when the notebook is exec
 - How to evaluate wrong predictions
 - How to perform single-image inference
 
-## Repository Structure(2026.05.21.ver.)
+## Repository Structure(2026.06.14.ver.)
 
 ```text
 pet-transfer-resnet18/
@@ -93,13 +93,13 @@ pet-transfer-resnet18/
 ├─ .gitignore
 ├─ notebooks/
 │  ┣ 00_pet_transfer_project_baseline_before_execution.ipynb
-│  ┣ 01_pet_transfer_resnet18_baseline.ipynb
+│  ┣ 01_pet_transfer_resnet18_baseline.ipynb(Deleted)
 │  ┣ 02_pet_transfer_project_without_Freeze_version_before_execution.ipynb
-│  ┣ 03_pet_transfer_project_without_Freeze_version.ipynb
+│  ┣ 03_pet_transfer_project_without_Freeze_version.ipynb(Deleted)
 │  ┣ 04_pet_transfer_project_EarlyStopping_before_execution.ipynb
-│  ┣ 05_pet_transfer_project_EarlyStopping.ipynb
+│  ┣ 05_pet_transfer_project_EarlyStopping.ipynb(Deleted)
 │  ┣ _06_pet_transfer_project_without_Freeze_LR_same_version_before_execution.ipynb
-│  └─07_pet_transfer_project_without_Freeze_LR_same_version.ipynb
+│  └─07_pet_transfer_project_without_Freeze_LR_same_version.(Deleted)
 ├─ docs/
 │  └─ assets/
 │       ┣ experiment_accuracy_comparison_05.14.png
